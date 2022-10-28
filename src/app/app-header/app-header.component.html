@@ -1,11 +1,17 @@
 <div id="app_header_flex_container">
+  <div class="app_header_flex_item">
+    <h1>Seja bem vindo ao  {{ title }}!</h1>
+  </div>
+  <div class="app_header_link">
     <div class="app_header_flex_item">
-      <h1>Seja bem vindo ao  {{ title }}!</h1>
+      <h2><a (mouseenter)="color_in($event.target)" (mouseleave)="color_in($event.target)" routerLink="/app-home">Home</a></h2>
     </div>
     <div class="app_header_flex_item">
-      <h2>1234</h2>
+      <h2><a (mouseenter)="color_in($event.target)" (mouseleave)="color_in($event.target)" routerLink="/app-register">Cadastro</a></h2>
     </div>
     <div class="app_header_flex_item">
-      <h2>123</h2>
+      <h2><a (mouseenter)="color_in($event.target)" (mouseleave)="color_in($event.target)" routerLink="/app-show">Consulta</a></h2>
     </div>
   </div>
+</div>
+<router-outlet></router-outlet>

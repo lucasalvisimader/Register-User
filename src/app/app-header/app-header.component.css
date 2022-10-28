@@ -1,9 +1,24 @@
+@font-face {
+    font-family: app_header_font;
+    src: url('../../assets/fonts/app_header_font.ttf');
+}
+
 #app_header_flex_container {
+    font-family: app_header_font;
     display: flex;
     flex-direction: row;
     padding-inline-end: 12vw;
+    background-color: coral;
+    align-items: center;
 }
 
-#app_header_flex_container > .app_root_flex_item {
+#app_header_flex_container > .app_header_flex_item {
     flex: content;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 8.5%;
 }
