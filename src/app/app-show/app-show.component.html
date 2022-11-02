@@ -1,3 +1,26 @@
-<div>
-    <h5>OLÁ</h5>
+<div id="show" *ngFor="let user of listPeople;">
+    <pre>
+        <table id="table">
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Senha</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+                <th>Gênero</th>
+                <th>Idade</th>
+                <th>Foto</th>
+            </tr>
+            <tr>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.password }}</td>
+                <td>{{ user.city }}</td>
+                <td>{{ user.district }}</td>
+                <td>{{ user.gender }}</td>
+                <td>{{ user.age }}</td>
+                <td><img style="height: 100px; width: 100px;" src="{{ user.link }}"></td>
+            </tr>
+        </table>
+    </pre>
 </div>

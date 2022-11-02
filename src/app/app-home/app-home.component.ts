@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
     styleUrls: ['./app-home.component.css']
 })
 
-export class AppHomeComponent { }
+export class AppHomeComponent {
+    imageHomeUrl = '../../assets/img/home.jpg';
+ }

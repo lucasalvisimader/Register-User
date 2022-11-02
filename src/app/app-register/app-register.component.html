@@ -1,27 +1,15 @@
 <div id="inputs">
-    <input class="input" id="name" type="text" placeholder="Nome">
-    <input class="input" id="email" type="email" placeholder="E-mail">
-    <input class="input" id="password" type="password" placeholder="Senha">
+    <input class="input" id="name" type="text" placeholder="Nome" name="nome" [(ngModel)]="name">
+    <input class="input" id="email" type="email" placeholder="E-mail" [(ngModel)]="email">
+    <input class="input" id="password" type="password" placeholder="Senha" [(ngModel)]="password">
     <br>
-    <input class="input" id="state" type="text" placeholder="Estado">
-    <input class="input" id="city" type="text" placeholder="Cidade">
-    <input class="input" id="district" type="text" placeholder="Bairro">
-    <fieldset>
-    <legend>Gênero</legend>
-    <div id="gender">
-        <input class="input" id="man" type="radio" name="drone" value="homem">
-        <label for="man">Masculino</label>
-    </div>
-    <div id="gender"> //hashtag usar variave local
-        <input class="input" id="woman" type="radio" name="drone" value="mulher">
-        <label for="woman">Mulher</label>
-    </div>
-        <div id="gender">
-        <input class="input" id="other" type="radio" name="drone" value="other">
-        <label for="other">Outro</label>
-    </div>
-    </fieldset>
-    <input class="input" id="age" type="number" placeholder="Idade">
-    <input class="input" id="link" type="url" placeholder="Link de uma foto do que mais gosta de fazer">
-    <button (click)="send(name, email, state, city, district, gender, age, link)"> //usar two-way data binding</button>
+    <input class="input" id="state" type="text" placeholder="Estado" [(ngModel)]="state">
+    <input class="input" id="city" type="text" placeholder="Cidade" [(ngModel)]="city">
+    <input class="input" id="district" type="text" placeholder="Bairro" [(ngModel)]="district">
+    <br>
+    <input class="input" id="gender" type="text" placeholder="Gênero" [(ngModel)]="gender">
+    <input class="input" id="age" type="number" placeholder="Idade" [(ngModel)]="age">
+    <input class="input" id="link" type="url" placeholder="Link de uma foto do que mais gosta de fazer" [(ngModel)]="link">
+    <br>
+    <button defaultPadding="" (click)="send()">Enviar</button>
 </div>

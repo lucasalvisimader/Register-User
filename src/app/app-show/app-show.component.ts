@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'app-show',
@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
     styleUrls: ['./app-show.component.css']
 })
 
-export class AppShowComponent { }
+export class AppShowComponent { 
+    listPeople = JSON.parse(localStorage.getItem('data'));
+}
